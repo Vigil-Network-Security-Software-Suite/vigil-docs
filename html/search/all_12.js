@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['watchlist_5fmember_51',['watchlist_member',['../structwatchlist__member.html',1,'']]]
+  ['watchlist_5fmember_58',['watchlist_member',['../structwatchlist__member.html',1,'']]]
 ];

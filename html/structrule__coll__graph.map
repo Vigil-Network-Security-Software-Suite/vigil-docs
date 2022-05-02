@@ -1,0 +1,6 @@
+<map id="rule" name="rule">
+<area shape="rect" id="node1" title="the actual data for the rules" alt="" coords="158,95,205,121"/>
+<area shape="rect" id="node2" href="$structr__tcp__data.html" title=" " alt="" coords="5,5,96,32"/>
+<area shape="rect" id="node3" href="$structr__icmp__dataset.html" title=" " alt="" coords="120,5,243,32"/>
+<area shape="rect" id="node4" href="$structr__raw__ip__data.html" title=" " alt="" coords="267,5,381,32"/>
+</map>

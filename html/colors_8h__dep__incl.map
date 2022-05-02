@@ -1,0 +1,6 @@
+<map id="src/colors.h" name="src/colors.h">
+<area shape="rect" id="node1" title="Define ASCII escape sequence for printing in color." alt="" coords="233,5,329,32"/>
+<area shape="rect" id="node2" href="$icmpdsct_8c.html" title="Handle ICMP decoding for IPv4 and IPv6." alt="" coords="5,80,173,107"/>
+<area shape="rect" id="node3" href="$l2pktmgr_8c.html" title="Handle Datalink decoding." alt="" coords="197,80,365,107"/>
+<area shape="rect" id="node4" href="$l3pktmgr_8c.html" title="Handle Layer 3 decoding." alt="" coords="389,80,557,107"/>
+</map>

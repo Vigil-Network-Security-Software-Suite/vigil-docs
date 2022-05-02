@@ -1,0 +1,6 @@
+<map id="rule_data" name="rule_data">
+<area shape="rect" id="node1" title="the struct for gathering data to be tested against rules" alt="" coords="122,95,205,121"/>
+<area shape="rect" id="node2" href="$struct____icmp4.html" title=" " alt="" coords="5,5,81,32"/>
+<area shape="rect" id="node3" href="$struct____tcp.html" title=" " alt="" coords="135,5,191,32"/>
+<area shape="rect" id="node4" href="$structip__hdr.html" title=" " alt="" coords="240,5,303,32"/>
+</map>
