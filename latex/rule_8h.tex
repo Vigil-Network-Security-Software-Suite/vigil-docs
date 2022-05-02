@@ -1,0 +1,83 @@
+\hypertarget{rule_8h}{}\doxysection{src/filter/parsing/rule.h File Reference}
+\label{rule_8h}\index{src/filter/parsing/rule.h@{src/filter/parsing/rule.h}}
+
+
+Define functions and structure for rule.\+c.  
+
+
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$sys/socket.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../../packets/ip\+\_\+hdr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../packets/tcp.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$regex.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../../packets/icmp4.\+h\char`\"{}}\newline
+Include dependency graph for rule.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structrule__data}{rule\+\_\+data}}
+\begin{DoxyCompactList}\small\item\em the struct for gathering data to be tested against rules \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structblocked__ipv4}{blocked\+\_\+ipv4}}
+\item 
+struct \mbox{\hyperlink{structr__icmp__dataset}{r\+\_\+icmp\+\_\+dataset}}
+\item 
+struct \mbox{\hyperlink{structr__tcp__data}{r\+\_\+tcp\+\_\+data}}
+\item 
+struct \mbox{\hyperlink{structr__raw__ip__data}{r\+\_\+raw\+\_\+ip\+\_\+data}}
+\item 
+struct \mbox{\hyperlink{structrule}{rule}}
+\begin{DoxyCompactList}\small\item\em the actual data for the rules \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{rule_8h_a14ed9000f4d3b681fce34ee771c222af}\label{rule_8h_a14ed9000f4d3b681fce34ee771c222af}} 
+\#define {\bfseries FLOW\+\_\+\+OUTWARD}~69
+\item 
+\mbox{\Hypertarget{rule_8h_a1662020bdd0d3201a570a82409fed014}\label{rule_8h_a1662020bdd0d3201a570a82409fed014}} 
+\#define {\bfseries FLOW\+\_\+\+INWARD}~70
+\item 
+\mbox{\Hypertarget{rule_8h_acffc69a3f8eb05bb324bb749b3ef8c1b}\label{rule_8h_acffc69a3f8eb05bb324bb749b3ef8c1b}} 
+\#define {\bfseries FLOW\+\_\+\+EITHER}~71
+\item 
+\mbox{\Hypertarget{rule_8h_adeacb9ce98fc59efc7f771875b0687dd}\label{rule_8h_adeacb9ce98fc59efc7f771875b0687dd}} 
+\#define {\bfseries EXTERNAL\+\_\+\+NET}~-\/1
+\item 
+\mbox{\Hypertarget{rule_8h_aa62468531393e65ba92bc54f0afcfffd}\label{rule_8h_aa62468531393e65ba92bc54f0afcfffd}} 
+\#define {\bfseries R\+\_\+\+TCP}~126
+\item 
+\mbox{\Hypertarget{rule_8h_a0a235eea0a58f91fe63cb532c0c3ea0a}\label{rule_8h_a0a235eea0a58f91fe63cb532c0c3ea0a}} 
+\#define {\bfseries R\+\_\+\+UDP}~127
+\item 
+\mbox{\Hypertarget{rule_8h_a1348ef53cfe2562661ae372c8a14abeb}\label{rule_8h_a1348ef53cfe2562661ae372c8a14abeb}} 
+\#define {\bfseries R\+\_\+\+ICMP}~128
+\item 
+\mbox{\Hypertarget{rule_8h_aab3346c697e557000276b654cf1385e6}\label{rule_8h_aab3346c697e557000276b654cf1385e6}} 
+\#define {\bfseries R\+\_\+\+ALL}~-\/1
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{rule_8h_a935dcf607cbbcb7b90d9b5a9b57b410e}\label{rule_8h_a935dcf607cbbcb7b90d9b5a9b57b410e}} 
+void \mbox{\hyperlink{rule_8h_a935dcf607cbbcb7b90d9b5a9b57b410e}{rulemgr}} (const struct \mbox{\hyperlink{structrule__data}{rule\+\_\+data}} $\ast$)
+\begin{DoxyCompactList}\small\item\em take the \mbox{\hyperlink{structrule__data}{rule\+\_\+data}} and test it by iterating through all of the rules in rules \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{rule_8h_afdc32ed2048469da431ffb22c51973b4}\label{rule_8h_afdc32ed2048469da431ffb22c51973b4}} 
+bool {\bfseries r\+\_\+engine} (const struct \mbox{\hyperlink{structrule}{rule}} $\ast$, const struct \mbox{\hyperlink{structrule__data}{rule\+\_\+data}} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Define functions and structure for rule.\+c. 
+
+\begin{DoxyAuthor}{Author}
+Conner Macolley 
+\end{DoxyAuthor}
+\hypertarget{rule_8h_LICENSE}{}\doxysubsection{LICENSE}\label{rule_8h_LICENSE}
+Copyright 2021 Conner Macolley
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at \begin{DoxyVerb}http://www.apache.org/licenses/LICENSE-2.0
+\end{DoxyVerb}
+ Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 

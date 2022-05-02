@@ -1,0 +1,45 @@
+\hypertarget{l2pktmgr_8c}{}\doxysection{src/capture/l2pktmgr.c File Reference}
+\label{l2pktmgr_8c}\index{src/capture/l2pktmgr.c@{src/capture/l2pktmgr.c}}
+
+
+Handle Datalink decoding.  
+
+
+{\ttfamily \#include $<$pcap.\+h$>$}\newline
+{\ttfamily \#include $<$netinet/ether.\+h$>$}\newline
+{\ttfamily \#include $<$net/if\+\_\+arp.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}l2pktmgr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}protocols.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../utils.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$pthread.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../colors.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../database/update\+\_\+db.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../packets/arp-\/hdr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../statistics/arpcache.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../packets/ctp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../globals.\+h\char`\"{}}\newline
+Include dependency graph for l2pktmgr.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{l2pktmgr_8c_a09407e6a7e527c7f1fcff66f5a7f4c5c}\label{l2pktmgr_8c_a09407e6a7e527c7f1fcff66f5a7f4c5c}} 
+void {\bfseries arpdecode} (const unsigned char $\ast$pkt, const struct pcap\+\_\+pkthdr $\ast$pkthdr)
+\item 
+\mbox{\Hypertarget{l2pktmgr_8c_a3dd99d3d04f71be8046b627c2ce1c7ce}\label{l2pktmgr_8c_a3dd99d3d04f71be8046b627c2ce1c7ce}} 
+void {\bfseries loopback\+\_\+ctp\+\_\+decode} (const unsigned char $\ast$pkt)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handle Datalink decoding. 
+
+\hypertarget{rule_8h_LICENSE}{}\doxysubsection{LICENSE}\label{rule_8h_LICENSE}
+Copyright 2021 Conner Macolley
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at \begin{DoxyVerb}http://www.apache.org/licenses/LICENSE-2.0
+\end{DoxyVerb}
+ Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 

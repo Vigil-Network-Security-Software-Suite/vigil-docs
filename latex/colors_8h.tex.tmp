@@ -1,0 +1,69 @@
+\hypertarget{colors_8h}{}\doxysection{src/colors.h File Reference}
+\label{colors_8h}\index{src/colors.h@{src/colors.h}}
+
+
+Define ASCII escape sequence for printing in color.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{colors_8h_aac2b52fafb46237127016b22a79b765a}\label{colors_8h_aac2b52fafb46237127016b22a79b765a}} 
+\#define {\bfseries \+\_\+\+\_\+\+END\+\_\+\+COLOR\+\_\+\+STREAM}~\char`\"{}\textbackslash{}033\mbox{[}0m\char`\"{}
+\item 
+\mbox{\Hypertarget{colors_8h_a4a68d23612369700721294e5095bb8e7}\label{colors_8h_a4a68d23612369700721294e5095bb8e7}} 
+\#define {\bfseries \+\_\+\+\_\+\+TCP\+\_\+\+COLOR\+\_\+\+NS}~\char`\"{}\textbackslash{}033\mbox{[}32m\char`\"{}
+\item 
+\mbox{\Hypertarget{colors_8h_af9016e0d44a0b9de089bb10ece5eddd7}\label{colors_8h_af9016e0d44a0b9de089bb10ece5eddd7}} 
+\#define {\bfseries \+\_\+\+\_\+\+TCP\+\_\+\+SYN}~\char`\"{}\textbackslash{}033\mbox{[}35m\char`\"{}
+\item 
+\mbox{\Hypertarget{colors_8h_ad9bb57667825285fc7a0fb4bdb245ce0}\label{colors_8h_ad9bb57667825285fc7a0fb4bdb245ce0}} 
+\#define {\bfseries \+\_\+\+\_\+\+TCP\+\_\+\+PSH}~\char`\"{}\textbackslash{}033\mbox{[}34m\char`\"{}
+\item 
+\mbox{\Hypertarget{colors_8h_a71893b8431912e6ddf65c133c73b8cf4}\label{colors_8h_a71893b8431912e6ddf65c133c73b8cf4}} 
+\#define {\bfseries \+\_\+\+\_\+\+TCP\+\_\+\+ACK}~\char`\"{}\textbackslash{}033\mbox{[}33m\char`\"{}
+\item 
+\mbox{\Hypertarget{colors_8h_aae952ea447bcfc7fe24f421868a3fb19}\label{colors_8h_aae952ea447bcfc7fe24f421868a3fb19}} 
+\#define {\bfseries \+\_\+\+\_\+\+TCP\+\_\+\+RST}~\char`\"{}\textbackslash{}033\mbox{[}31m\char`\"{}
+\item 
+\mbox{\Hypertarget{colors_8h_a98d0ae289c706908b34f8ee6167f80da}\label{colors_8h_a98d0ae289c706908b34f8ee6167f80da}} 
+\#define {\bfseries \+\_\+\+\_\+\+TCP\+\_\+\+URG}~\char`\"{}\textbackslash{}033\mbox{[}36m\char`\"{}
+\item 
+\mbox{\Hypertarget{colors_8h_ac01995be0d14b532275dd44a55105be8}\label{colors_8h_ac01995be0d14b532275dd44a55105be8}} 
+\#define {\bfseries \+\_\+\+\_\+\+TCP\+\_\+\+FIN}~\char`\"{}\textbackslash{}033\mbox{[}37m\char`\"{}
+\item 
+\mbox{\Hypertarget{colors_8h_ab34164e1f9faeef3fb122870cddae709}\label{colors_8h_ab34164e1f9faeef3fb122870cddae709}} 
+\#define {\bfseries \+\_\+\+\_\+\+ARP\+\_\+\+BOTH}~\char`\"{}\textbackslash{}033\mbox{[}3;33m\char`\"{}
+\item 
+\mbox{\Hypertarget{colors_8h_a23cce3e07c7d6df97267db4295107ac8}\label{colors_8h_a23cce3e07c7d6df97267db4295107ac8}} 
+\#define {\bfseries \+\_\+\+\_\+\+FRAGMENTED}~\char`\"{}\textbackslash{}033\mbox{[}4m\char`\"{}
+\item 
+\mbox{\Hypertarget{colors_8h_ab83e4d54975e775d79befa5c7c555f16}\label{colors_8h_ab83e4d54975e775d79befa5c7c555f16}} 
+\#define {\bfseries \+\_\+\+\_\+\+REG\+\_\+\+ICMP\+\_\+v4\+\_\+v6}~\char`\"{}\textbackslash{}033\mbox{[}35m\char`\"{}
+\item 
+\mbox{\Hypertarget{colors_8h_a3f558865f342d92bac53ad2381996160}\label{colors_8h_a3f558865f342d92bac53ad2381996160}} 
+\#define {\bfseries \+\_\+\+\_\+\+UDP\+\_\+\+REG}~\char`\"{}\textbackslash{}033\mbox{[}96m\char`\"{}
+\item 
+\mbox{\Hypertarget{colors_8h_ae45a6f9528c67302fac212d39d4cdde7}\label{colors_8h_ae45a6f9528c67302fac212d39d4cdde7}} 
+\#define {\bfseries \+\_\+\+\_\+\+STP}~\char`\"{}\textbackslash{}033\mbox{[}94m\char`\"{}
+\item 
+\mbox{\Hypertarget{colors_8h_ae137115adfa363fa6d3d4666e2ffeb42}\label{colors_8h_ae137115adfa363fa6d3d4666e2ffeb42}} 
+\#define {\bfseries BLOCKED\+\_\+\+IP\+\_\+\+FOUND}~\+\_\+\+\_\+\+TCP\+\_\+\+RST
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Define ASCII escape sequence for printing in color. 
+
+\begin{DoxyAuthor}{Author}
+Conner Macolley 
+\end{DoxyAuthor}
+\hypertarget{rule_8h_LICENSE}{}\doxysubsection{LICENSE}\label{rule_8h_LICENSE}
+Copyright 2021 Conner Macolley
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at \begin{DoxyVerb}http://www.apache.org/licenses/LICENSE-2.0
+\end{DoxyVerb}
+ Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\hypertarget{colors_8h_DESCRIPTION}{}\doxysubsection{DESCRIPTION}\label{colors_8h_DESCRIPTION}
+Define ASCII escape sequence for printing in color 

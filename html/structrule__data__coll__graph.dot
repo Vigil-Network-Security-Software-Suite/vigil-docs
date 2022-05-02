@@ -1,0 +1,13 @@
+digraph "rule_data"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="rule_data",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="the struct for gathering data to be tested against rules"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" icmp_header" ,fontname="Helvetica"];
+  Node2 [label="__icmp4",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct____icmp4.html",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tcp_header" ,fontname="Helvetica"];
+  Node3 [label="__tcp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct____tcp.html",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ip_header" ,fontname="Helvetica"];
+  Node4 [label="ip_hdr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structip__hdr.html",tooltip=" "];
+}

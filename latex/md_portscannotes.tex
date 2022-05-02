@@ -1,0 +1,44 @@
+Open does port 80 and closed does port 81 \hypertarget{md_portscannotes_autotoc_md1}{}\doxysection{nmap -\/s\+V 45.\+33.\+32.\+156}\label{md_portscannotes_autotoc_md1}
+lhost\mbox{[}syn\mbox{]} -\/---$>$ rhost $<$ this repeats about 30 times ~\newline
+ rhost\mbox{[}rst\mbox{]} -\/---$>$ lhost $<$ this reapets about 30 times ~\newline
+ \DoxyHorRuler{0}
+\hypertarget{md_portscannotes_autotoc_md2}{}\doxysection{zmap -\/p 80 45.\+33.\+32.\+156}\label{md_portscannotes_autotoc_md2}
+\hypertarget{md_portscannotes_autotoc_md3}{}\doxysubsection{Open}\label{md_portscannotes_autotoc_md3}
+lhost -\/---$>$ rhost SYN ~\newline
+ rhost -\/---$>$ lhost SYN, ACK ~\newline
+ lhost -\/---$>$ rhost RST ~\newline
+ \hypertarget{md_portscannotes_autotoc_md4}{}\doxysubsection{Closed}\label{md_portscannotes_autotoc_md4}
+lhost -\/---$>$ rhost SYN ~\newline
+ rhost -\/---$>$ lhost RST, ACK ~\newline
+
+
+\DoxyHorRuler{0}
+\hypertarget{md_portscannotes_autotoc_md5}{}\doxysection{masscan -\/p 80 –range 45.\+33.\+32.\+156}\label{md_portscannotes_autotoc_md5}
+\hypertarget{md_portscannotes_autotoc_md6}{}\doxysubsection{Open}\label{md_portscannotes_autotoc_md6}
+lhost -\/-\/$>$ rhost SYN ~\newline
+ rhost -\/-\/$>$ lhost SYN, ACK ~\newline
+ lhost -\/-\/$>$ rhost RST ~\newline
+ lhost -\/-\/$>$ rhost RST~\newline
+ \hypertarget{md_portscannotes_autotoc_md7}{}\doxysubsection{Closed}\label{md_portscannotes_autotoc_md7}
+lhost -\/-\/$>$ rhost SYN~\newline
+ rhost -\/-\/$>$ lhost RST, ACK ~\newline
+ lhost -\/-\/$>$ rhost RST~\newline
+
+
+\DoxyHorRuler{0}
+\hypertarget{md_portscannotes_autotoc_md8}{}\doxysection{nmap -\/s\+M 45.\+33.\+32.\+156 -\/p 80 (\+Maimon Scan)}\label{md_portscannotes_autotoc_md8}
+\hypertarget{md_portscannotes_autotoc_md9}{}\doxysubsection{Open}\label{md_portscannotes_autotoc_md9}
+lhost -\/-\/$>$ rhost ICMP echo ~\newline
+ lhost -\/-\/$>$ rhost TCP SYN ~\newline
+ lhost -\/-\/$>$ rhost TCP ACK ~\newline
+ lhost -\/-\/$>$ rhost ICMP timstamp req ~\newline
+ rhost -\/-\/$>$ lhost ICMP echo reply ~\newline
+ rhost -\/-\/$>$ lhost RST ~\newline
+ rhost -\/-\/$>$ lhost RST, ACK ~\newline
+ lhost -\/-\/$>$ rhost FIN, ACK ~\newline
+ lhost -\/-\/$>$ rhost FIN, ACK ~\newline
+ \hypertarget{md_portscannotes_autotoc_md10}{}\doxysubsection{Closed}\label{md_portscannotes_autotoc_md10}
+Same as open
+
+\DoxyHorRuler{0}
+\hypertarget{md_portscannotes_autotoc_md11}{}\doxysection{nmap -\/s\+W 45.\+33.\+32.\+156 -\/p 80}\label{md_portscannotes_autotoc_md11}

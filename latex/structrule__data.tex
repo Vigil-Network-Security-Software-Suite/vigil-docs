@@ -1,0 +1,83 @@
+\hypertarget{structrule__data}{}\doxysection{rule\+\_\+data Struct Reference}
+\label{structrule__data}\index{rule\_data@{rule\_data}}
+
+
+the struct for gathering data to be tested against rules  
+
+
+
+
+{\ttfamily \#include $<$rule.\+h$>$}
+
+
+
+Collaboration diagram for rule\+\_\+data\+:
+% FIG 0
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structrule__data_ad95756057a12e66d69c5f218565e0890}\label{structrule__data_ad95756057a12e66d69c5f218565e0890}} 
+unsigned char $\ast$ {\bfseries pkt}
+\item 
+\mbox{\Hypertarget{structrule__data_ae5a794601fa9ba432f923832f13425cf}\label{structrule__data_ae5a794601fa9ba432f923832f13425cf}} 
+char $\ast$ {\bfseries src\+\_\+ip\+\_\+addr}
+\item 
+\mbox{\Hypertarget{structrule__data_ab60304d436921e64786aa5d5d4ae929c}\label{structrule__data_ab60304d436921e64786aa5d5d4ae929c}} 
+char $\ast$ {\bfseries dest\+\_\+ip\+\_\+addr}
+\item 
+\mbox{\Hypertarget{structrule__data_af1c0f99eff29687c762da15fda90f917}\label{structrule__data_af1c0f99eff29687c762da15fda90f917}} 
+uint32\+\_\+t {\bfseries srcip}
+\item 
+\mbox{\Hypertarget{structrule__data_a615e35632b87e4e46049ae784bda14aa}\label{structrule__data_a615e35632b87e4e46049ae784bda14aa}} 
+uint32\+\_\+t {\bfseries destip}
+\item 
+\mbox{\Hypertarget{structrule__data_a83e3039fd8985ec9eb59afac8ef1e099}\label{structrule__data_a83e3039fd8985ec9eb59afac8ef1e099}} 
+int {\bfseries flow}
+\item 
+\mbox{\Hypertarget{structrule__data_ae4c8d5b3536f452316d9ff7f45728143}\label{structrule__data_ae4c8d5b3536f452316d9ff7f45728143}} 
+unsigned int {\bfseries src\+\_\+port}
+\item 
+\mbox{\Hypertarget{structrule__data_a2fc54165a65af2eb5db5de62c812fd38}\label{structrule__data_a2fc54165a65af2eb5db5de62c812fd38}} 
+unsigned int {\bfseries dest\+\_\+port}
+\item 
+\mbox{\Hypertarget{structrule__data_a67673e29b6dedb8b12669346f143bc83}\label{structrule__data_a67673e29b6dedb8b12669346f143bc83}} 
+int {\bfseries \+\_\+\+\_\+protocol}
+\item 
+\mbox{\Hypertarget{structrule__data_a3ba916888db65f4c8af03c4228e38835}\label{structrule__data_a3ba916888db65f4c8af03c4228e38835}} 
+int {\bfseries pkt\+\_\+len}
+\item 
+\mbox{\Hypertarget{structrule__data_a77532852b1dc1ea80bc8bba485588c71}\label{structrule__data_a77532852b1dc1ea80bc8bba485588c71}} 
+unsigned int {\bfseries dsize}
+\item 
+\mbox{\Hypertarget{structrule__data_a8c1562b1166fc77dd33c40b4786b8c47}\label{structrule__data_a8c1562b1166fc77dd33c40b4786b8c47}} 
+bool {\bfseries encrypted}
+\item 
+\mbox{\Hypertarget{structrule__data_a1f0072c42205993148b5329259f2ccba}\label{structrule__data_a1f0072c42205993148b5329259f2ccba}} 
+const struct sockaddr\+\_\+in $\ast$ {\bfseries src\+\_\+socket}
+\item 
+\mbox{\Hypertarget{structrule__data_a26173d9fee6b5ccc96ef2cadcf5b8862}\label{structrule__data_a26173d9fee6b5ccc96ef2cadcf5b8862}} 
+const struct sockaddr\+\_\+in $\ast$ {\bfseries dest\+\_\+socket}
+\item 
+\mbox{\Hypertarget{structrule__data_abb8fc00607de8e504bc51858a756bc85}\label{structrule__data_abb8fc00607de8e504bc51858a756bc85}} 
+const struct \mbox{\hyperlink{structip__hdr}{ip\+\_\+hdr}} $\ast$ {\bfseries ip\+\_\+header}
+\item 
+\mbox{\Hypertarget{structrule__data_a5a83d18806951bd75f40f6ebe7ff40cc}\label{structrule__data_a5a83d18806951bd75f40f6ebe7ff40cc}} 
+const struct \mbox{\hyperlink{struct____tcp}{\+\_\+\+\_\+tcp}} $\ast$ {\bfseries tcp\+\_\+header}
+\item 
+\mbox{\Hypertarget{structrule__data_a06d7b8a90051845082a181764b34c02e}\label{structrule__data_a06d7b8a90051845082a181764b34c02e}} 
+const struct \mbox{\hyperlink{struct____icmp4}{\+\_\+\+\_\+icmp4}} $\ast$ {\bfseries icmp\+\_\+header}
+\item 
+\mbox{\Hypertarget{structrule__data_ac4ad498c83e7d44075bb7fcc01911c0a}\label{structrule__data_ac4ad498c83e7d44075bb7fcc01911c0a}} 
+unsigned char {\bfseries tcp\+\_\+flags} \mbox{[}8\mbox{]}
+\item 
+\mbox{\Hypertarget{structrule__data_ad56241d3b5f2e15f11c53e262cad904e}\label{structrule__data_ad56241d3b5f2e15f11c53e262cad904e}} 
+int {\bfseries is\+\_\+established}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+the struct for gathering data to be tested against rules 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/filter/parsing/\mbox{\hyperlink{rule_8h}{rule.\+h}}\end{DoxyCompactItemize}

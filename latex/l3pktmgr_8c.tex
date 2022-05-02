@@ -1,0 +1,70 @@
+\hypertarget{l3pktmgr_8c}{}\doxysection{src/capture/l3pktmgr.c File Reference}
+\label{l3pktmgr_8c}\index{src/capture/l3pktmgr.c@{src/capture/l3pktmgr.c}}
+
+
+Handle Layer 3 decoding.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$pcap.\+h$>$}\newline
+{\ttfamily \#include $<$netinet/ip6.\+h$>$}\newline
+{\ttfamily \#include $<$netinet/ether.\+h$>$}\newline
+{\ttfamily \#include $<$sys/socket.\+h$>$}\newline
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$netinet/ip.\+h$>$}\newline
+{\ttfamily \#include $<$netinet/udp.\+h$>$}\newline
+{\ttfamily \#include $<$netinet/tcp.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../packets/ip\+\_\+hdr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}l3pktmgr.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../colors.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}protocols/igmp\+\_\+dsct.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}protocols.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../packets/ip6hdr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tcpmgr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../logging.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}udpmgr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../packets/icmp4.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}icmpdsct.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../print\+\_\+utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../filter/parsing/rule.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../filter/parsing/packet\+\_\+parser.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../globals.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../debug.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../engine/flags.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../engine/spi.\+h\char`\"{}}\newline
+Include dependency graph for l3pktmgr.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{l3pktmgr_8c_ace40451228efe40cd53d51143c1b31e7}{ipv4pktmgr}} (const unsigned char $\ast$pkt, const struct pcap\+\_\+pkthdr $\ast$pkt\+\_\+hdr)
+\begin{DoxyCompactList}\small\item\em handle decoding for ipv6 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handle Layer 3 decoding. 
+
+\hypertarget{rule_8h_LICENSE}{}\doxysubsection{LICENSE}\label{rule_8h_LICENSE}
+Copyright 2021 Conner Macolley
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at \begin{DoxyVerb}http://www.apache.org/licenses/LICENSE-2.0
+\end{DoxyVerb}
+ Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{l3pktmgr_8c_ace40451228efe40cd53d51143c1b31e7}\label{l3pktmgr_8c_ace40451228efe40cd53d51143c1b31e7}} 
+\index{l3pktmgr.c@{l3pktmgr.c}!ipv4pktmgr@{ipv4pktmgr}}
+\index{ipv4pktmgr@{ipv4pktmgr}!l3pktmgr.c@{l3pktmgr.c}}
+\doxysubsubsection{\texorpdfstring{ipv4pktmgr()}{ipv4pktmgr()}}
+{\footnotesize\ttfamily void ipv4pktmgr (\begin{DoxyParamCaption}\item[{const unsigned char $\ast$}]{pkt,  }\item[{const struct pcap\+\_\+pkthdr $\ast$}]{pkt\+\_\+hdr }\end{DoxyParamCaption})}
+
+
+
+handle decoding for ipv6 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]expand on this \end{DoxyRefDesc}
