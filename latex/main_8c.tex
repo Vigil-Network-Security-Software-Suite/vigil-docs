@@ -1,0 +1,78 @@
+\hypertarget{main_8c}{}\doxysection{main.\+c File Reference}
+\label{main_8c}\index{main.c@{main.c}}
+
+
+Start everything and start services.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$pcap.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$sys/resource.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}src/statistics/wclean.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}src/capture/pktmgr.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$signal.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}globals.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$getopt.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}src/filter/parsing/rule\+\_\+parser.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}src/statistics/ip\+\_\+addr\+\_\+stat.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}src/vrmc/nsh\+\_\+server.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}src/utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}src/statistics/watchlist.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$pthread.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}src/statistics/arpcache.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}src/filter/parsing/rule\+\_\+init.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}src/debug.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}src/lua/lua\+\_\+engine.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$execinfo.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}src/capture/tcpmgr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}src/backtrace/backtrace.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}src/monitoring/monitoring.\+h\char`\"{}}\newline
+Include dependency graph for main.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}\label{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}} 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)
+\item 
+\mbox{\Hypertarget{main_8c_a4575e5f8afbafece3aef872cfd607ae5}\label{main_8c_a4575e5f8afbafece3aef872cfd607ae5}} 
+void {\bfseries sigint\+\_\+processor} (int signal)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Start everything and start services. 
+
+\begin{DoxyAuthor}{Author}
+Conner Macolley 
+\end{DoxyAuthor}
+\hypertarget{rule_8h_LICENSE}{}\doxysubsection{LICENSE}\label{rule_8h_LICENSE}
+Copyright 2021-\/2022 Conner Macolley
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at \begin{DoxyVerb}http://www.apache.org/licenses/LICENSE-2.0
+\end{DoxyVerb}
+ Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. \hypertarget{colors_8h_DESCRIPTION}{}\doxysubsection{DESCRIPTION}\label{colors_8h_DESCRIPTION}
+The main function handles all of the following\+:
+\begin{DoxyItemize}
+\item Loading the function map
+\item Set signals for interrupts and crashes
+\item Initialize the throughout monitor
+\item Get CPU info(for cosmetics)
+\item Gather ip addresses from the blacklist
+\item Parse and store all of the rules
+\item Initialize all of the rules
+\item Collect Lua Scripts
+\item Start the VRMC server
+\item Start the capture process 
+\end{DoxyItemize}
